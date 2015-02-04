@@ -1,0 +1,5 @@
+package com.mkyong.common.inbound;
+
+public class Folder {
+
+}

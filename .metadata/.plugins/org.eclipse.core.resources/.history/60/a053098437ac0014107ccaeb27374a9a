@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.learning</groupId>
+  <artifactId>SpringsEx</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SpringsEx Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+            <groupid>javax.servlet</groupid>
+            <artifactid>servlet-api</artifactid>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Spring MVC  -->
+        <dependency>
+            <groupid>org.springframework</groupid>
+            <artifactid>spring-web</artifactid>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupid>org.springframework</groupid>
+            <artifactid>spring-webmvc</artifactid>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <!-- JSTL taglib -->
+        <dependency>
+            <groupid>taglibs</groupid>
+            <artifactid>standard</artifactid>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupid>javax.servlet</groupid>
+            <artifactid>jstl</artifactid>
+            <version>1.1.2</version>
+        </dependency>
+  </dependencies>
+  <build>
+    <finalName>SpringsEx</finalName>
+  </build>
+</project>

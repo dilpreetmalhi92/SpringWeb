@@ -1,0 +1,29 @@
+package com.mkyong.common.controller;
+
+import com.mkyong.common.inbound.Folder;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+
+@Controller
+public class FolderController {
+	@RequestMapping(value="/folder" , method=RequestMethod.GET)
+	public String getfolder(ModelMap model){
+		Folder folder=new Folder("abcd",1,98.56,"yhfiifikk");
+		model.addAttribute("foldername", folder.getName());
+		model.addAttribute("count", folder.getCount());
+		model.addAttribute("size", folder.getSize());
+		model.addAttribute("properties", folder.getProperties());
+		return "folder";
+	}
+	@RequestMapping(value="/subFolder", method=RequestMethod.GET)
+	public Folder getsubFolder(){
+		Folder folder=new Folder();
+		
+	  	return folder;
+	}
+}
